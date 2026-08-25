@@ -1,6 +1,6 @@
 # Ejercicio 1 — CC5002
 
-**Nombre**: [tu nombre va aqui]
+**Nombre**: [Tomás Canales]
 
 ---
 
@@ -11,7 +11,7 @@
 Considere el siguiente fragmento HTML:
 
 ```html
-<div id="seccion-principal">
+<main>
   <div>Noticias del DCC</div>
   <div>
     <div class="noticia">
@@ -24,7 +24,7 @@ Considere el siguiente fragmento HTML:
       <div class="link"><a href="/noticias/lab-ia">Leer más</a></div>
     </div>
   </div>
-</div>
+</main>
 ```
 
 Este código funciona y se ve correctamente en el navegador. Sin embargo, tiene problemas de **estructura semántica**: usa solo `<div>` para todo.
