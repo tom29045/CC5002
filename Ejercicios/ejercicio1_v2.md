@@ -12,18 +12,18 @@ Considere el siguiente fragmento HTML:
 
 ```html
 <main>
-  <div>Noticias del DCC</div>
-  <div>
-    <div class="noticia">
-      <div class="titulo">Nuevo laboratorio de IA</div>
-      <div class="fecha">10 de marzo, 2025</div>
-      <div class="contenido">
+  <h1>Noticias del DCC</h1>
+  <section>
+    <article>
+      <h2>Nuevo laboratorio de IA</h2>
+      <time>10 de marzo, 2025</time>
+      <p>
         El DCC inauguró un nuevo espacio dedicado a la investigación
         en inteligencia artificial generativa.
-      </div>
-      <div class="link"><a href="/noticias/lab-ia">Leer más</a></div>
-    </div>
-  </div>
+      </p>
+      <nav><a href="/noticias/lab-ia">Leer más</a></nav>
+    </article>
+  </section>
 </main>
 ```
 
@@ -32,6 +32,8 @@ Este código funciona y se ve correctamente en el navegador. Sin embargo, tiene 
 **a)** Reescriba este fragmento usando etiquetas HTML5 semánticas apropiadas (por ejemplo: `<header>`, `<main>`, `<section>`, `<article>`, `<nav>`, `<h1>`-`<h6>`, `<time>`, `<p>`, `<footer>`, etc.). No necesita agregar CSS ni cambiar el contenido textual.
 
 **b)** En 2-3 oraciones, explique **por qué** su versión es mejor que la original, considerando que ambas se ven iguales en el navegador.
+
+esta version es mejor que la anterior puesto a que el navegador entiende mejor que es cada cosa, debido a que al utilizar las etiquetas apropiadas permite hacer puntos de referencia para cada cosa y permite a quien la revise comprender que es lo que es cada cosa en el codigo
 
 ### 1.2 (3 puntos)
 
@@ -72,6 +74,10 @@ document.getElementById("registro").addEventListener("submit", function(event) {
 Identifique **tres problemas o debilidades** en este código (pueden ser de HTML, de la validación JavaScript, o de usabilidad). Para cada uno, explique brevemente **qué problema causa** y **cómo lo solucionaría**.
 
 *Pista: piense en qué valores podría ingresar un usuario que pasen la validación pero no deberían, y en qué atributos HTML mejorarían la experiencia.*
+
+Problema/Debilidad 1 Al ingresar la edad se pueden ingresar palabras, por lo que pasa la validacion escribiendo cualquier edad, por lo que deberiamos setear el parametro edad como un int en lugar de un any
+Problema/Debilidad 2 al ingresar el email se puede ingresar "juanitoperez@" lo cual no es un email valido, para solucionarlo se debería agregar una restriccion que sea @dominio donde el dominio debe ser cualquiera valido, ejemplo @dcc.uchile.cl
+Problema/Debilidad 3 
  
 ## Pregunta 2: Implementación guiada (6 puntos)
  
