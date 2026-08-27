@@ -76,8 +76,8 @@ Identifique **tres problemas o debilidades** en este código (pueden ser de HTML
 *Pista: piense en qué valores podría ingresar un usuario que pasen la validación pero no deberían, y en qué atributos HTML mejorarían la experiencia.*
 
 Problema/Debilidad 1 Al ingresar la edad se pueden ingresar palabras, por lo que pasa la validacion escribiendo cualquier edad, por lo que deberiamos setear el parametro edad como un int en lugar de un any
-Problema/Debilidad 2 al ingresar el email se puede ingresar "juanitoperez@" lo cual no es un email valido, para solucionarlo se debería agregar una restriccion que sea @dominio donde el dominio debe ser cualquiera valido, ejemplo @dcc.uchile.cl
-Problema/Debilidad 3 
+Problema/Debilidad 2 al ingresar el email se puede ingresar "juanitoperez@" lo cual no es un email valido, para solucionarlo se debería agregar una restriccion que sea @dominio.tld donde el dominio debe ser cualquiera valido, ejemplo @dcc.uchile.cl, esto se puede hacer via verificacion html o usando regex
+Problema/Debilidad 3 en el nombre se puede agregar "   " como nombre, lo cual no es un nombre valido, se puede solucionar usando restingiendo los espacios usando .trim()
  
 ## Pregunta 2: Implementación guiada (6 puntos)
  
