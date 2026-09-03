@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+nav {
+  width: fit-content;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f4f4f4;
+  padding: 8px 12px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #004085;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+nav li a:hover {
+  background-color: #d1e7dd;
+}
