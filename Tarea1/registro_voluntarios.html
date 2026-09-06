@@ -1,18 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Registro Voluntario</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Voluntario</title>
+    <link rel="stylesheet" href="simple.css">
+</head>
+<body>
     <header>
         <h1>Registro de Voluntarios</h1>
     </header>
     <main>
         <h2>Formulario</h2>
-        <form id="form-registro" action="#" method="POST">
-            <p>Nombre <input name="nombre"></p>
-            <p>Numero de Telefono <input name="tel" size= 12> Correo Electronico <input name="email" size="32"></p>
-
+        <form id="form-registro">
+            <fieldset>
+                <legend>Datos Personales y Contacto</legend>
+                <p>
+                    <label for="nombre">Nombre completo (*):</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan">
+                </p>
+                <p>
+                    <label for="email">Correo electrónico (*):</label>
+                    <input type="email" id="email" name="email" placeholder="Ej: juanito@gmail.com">
+                </p>
+                <p>
+                    <label for="celular">Número de celular (*):</label>
+                    <input type="tel" id="celular" name="celular" placeholder="Ej: +56912345678">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Dirección Postal</legend>
+                <p>
+                    <label for="region">Región (*):</label>
+                    <select id="region" name="region">
+                        <option value="">Seleccione una región</option>
+                        <option value="Arica y Parinacota">Arica y Parinacota</option>
+                        <option value="Tarapacá">Tarapacá</option>
+                        <option value="Antofagasta">Antofagasta</option>
+                        <option value="Atacama">Atacama</option>
+                        <option value="Coquimbo">Coquimbo</option>
+                        <option value="Valparaíso">Valparaíso</option>
+                        <option value="Metropolitana">Metropolitana de Santiago</option>
+                        <option value="O'Higgins">Libertador General Bernardo O'Higgins</option>
+                        <option value="Maule">Maule</option>
+                        <option value="Ñuble">Ñuble</option>
+                        <option value="Biobío">Biobío</option>
+                        <option value="Araucanía">La Araucanía</option>
+                        <option value="Los Ríos">Los Ríos</option>
+                        <option value="Los Lagos">Los Lagos</option>
+                        <option value="Aysén">Aysén del General Carlos Ibáñez del Campo</option>
+                        <option value="Magallanes">Magallanes y de la Antártica Chilena</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="comuna">Comuna (*):</label>
+                    <input type="text" id="comuna" name="comuna" placeholder="Ej: Santiago">
+                </p>
+                <p>
+                    <label for="calle">Calle (opcional):</label>
+                    <input type="text" id="calle" name="calle" placeholder="Ej: Beaucheff">
+                </p>
+                <p>
+                    <label for="numero">Número (opcional):</label>
+                    <input type="number" id="numero" name="numero" placeholder="Ej: 850">
+                </p>
+            </fieldset>
+            <p>
+                <button type="submit">Completar Registro</button>
+                <a href="index.html">Regresar a Inicio</a>
+            </p>
         </form>
     </main>
+    <script src="registro_voluntarios.js"></script>
+</body>
 </html>

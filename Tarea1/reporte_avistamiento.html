@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Avistamiento</title>
+    <link rel="stylesheet" href="simple.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Avistamiento</h1>
+    </header>
+    <main>
+        <h2>Formulario de Registro</h2>
+        <form id="registro">
+            <fieldset>
+                <label for="tipo">Tipo de Ave (*):</label>
+                <select id="tipo" name="tipo">
+                    <option value="">Seleccione un tipo de ave</option>
+                    <option value="rapaces">Aves rapaces (águilas, halcones, búhos)</option>
+                    <option value="acuaticas">Aves acuáticas y humedales (patos, garzas, cisnes)</option>
+                    <option value="marinas">Aves marinas y costeras (gaviotas, pelícanos, cormoranes)</option>
+                    <option value="paseriformes">Pájaros de jardín y bosque / Paseriformes (chincoles, zorzales)</option>
+                    <option value="picaflores">Picaflores y colibríes</option>
+                    <option value="terrestres">Aves terrestres y corredoras (perdices, codornices)</option>
+                    <option value="loros">Loros y pericos (cachañas, choroyes)</option>
+                    <option value="otro">Otro tipo / No identificado</option>
+                </select>
+                
+                <label for="nombre">Nombre de Ave (*):</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Ingrese nombre del ave avistado">
+
+                <label for="lugar">Lugar de Avistamiento (*):</label>
+                <input type="text" id="lugar" name="lugar" placeholder="Ej: Torres del Paine">
+
+                <label for="dia_hora">Día y Hora del Avistamiento(*):</label>
+                <input type="datetime-local" id="dia_hora" name="dia_hora">
+
+                <label for="evidencia">Imagen o Video del Avistamiento(*):</label>
+                <input type="file" id="evidencia" name="evidencia" accept="image/*,video/*">
+            </fieldset>
+            <p>
+                <button type="submit">Finalizar Reporte</button>
+                <a href="index.html">Regresar a Inicio</a>
+            </p>
+        </form>
+    </main>
+    <script src="reporte_avistamiento.js"></script>
+</body>
+</html>
