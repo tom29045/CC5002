@@ -41,3 +41,21 @@ Para las validaciones de los formularios se usó JavaScript, para no permitir qu
 
 ## 3. Validación de Estándares W3C
 Se verificó que los 5 archivos HTML y `simple.css` cumplieran con los estándares W3C.
+
+## 4. Instrucciones de acceso y cambio de rama
+
+Para clonar el repositorio y situarse en la rama de esta entrega, ejecuta los siguientes comandos en tu terminal:
+
+```bash
+# 1. Clonar el repositorio (omite este paso si ya lo tienes)
+git clone <URL_DEL_REPOSITORIO>
+
+# 2. Entrar al directorio del proyecto
+cd <NOMBRE_DEL_REPOSITORIO>
+
+# 3. Descargar las ramas remotas actualizadas
+git fetch origin
+
+# 4. Cambiar a la rama Tarea-1
+git checkout Tarea-1
+
