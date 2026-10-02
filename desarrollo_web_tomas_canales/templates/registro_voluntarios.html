@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Voluntario</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/simple.css')}}">
+</head>
+<body>
+    <header>
+        <h1>Registro de Voluntarios</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('reporte_avistamiento') }}">Reportar Avistamientos</a></li>
+                <li><a href="{{ url_for('listado_avistamientos') }}">Listado de Avistamientos</a></li>
+                <li><a href="{{ url_for('estadisticas') }}">Estadisticas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% if errores %}
+            <strong>Errores encontrados:</strong>
+            <ul>
+                {% for err in errores %}
+                    <li>{{ err }}</li>
+                {% endfor %}
+            </ul>
+        </aside>
+        {% endif %}
+        <h2>Formulario</h2>
+        <form method="POST" action="{{ url_for('registro_voluntario') }}">
+            <fieldset>
+                <legend>Datos Personales y Contacto</legend>
+                <p>
+                    <label for="nombre">Nombre completo (*):</label>
+                    <input type="text" id="nombre" name="nombre" value="{{ datos.get('nombre', '') }}" placeholder="Ej: Juan">
+                </p>
+                <p>
+                    <label for="email">Correo electrónico (*):</label>
+                    <input type="email" id="email" name="email" value="{{ datos.get('email', '') }}" placeholder="Ej: juanito@gmail.com">
+                </p>
+                <p>
+                    <label for="celular">Número de celular (*):</label>
+                    <input type="tel" id="celular" name="celular" value="{{ datos.get('celular', '') }}" placeholder="Ej: +56912345678">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Dirección Postal</legend>
+                <p>
+                    <label for="region">Región (*):</label>
+                        <select id="region" name="region">
+                            <option value="">Seleccione una región</option>
+                            {% for r in regiones %}
+                                <option value="{{ r.id }}" {% if datos.get('region') == r.id|string %}selected{% endif %}>
+                                    {{ r.nombre }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                </p>
+                <p>
+                    <label for="comuna">Comuna (*):</label>
+                        <select id="comuna" name="comuna" {% if not datos.get('comuna') %}disabled{% endif %}>
+                            <option value="">Seleccione primero una región</option>
+                                {% for c in comunas %}
+                                    <option value="{{ c.id }}" data-region="{{ c.region_id }}" {% if datos.get('comuna') == c.id|string %}selected{% endif %}>
+                                        {{ c.nombre }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                </p>
+            </fieldset>
+            <p>
+                <button type="submit">Completar Registro</button>
+                <a href="{{ url_for('index')}}">Regresar a Inicio</a>
+            </p>
+        </form>
+    </main>
+    <script src="{{ url_for('static', filename= 'js/registro_voluntarios.js')}}"></script>
+</body>
+</html>

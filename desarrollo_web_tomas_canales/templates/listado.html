@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Avistamientos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/simple.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Avistamientos Registrados</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Inicio</a></li>
+            <li><a href="{{ url_for('registro_voluntario') }}">Registrar Voluntario</a></li>
+            <li><a href="{{ url_for('reporte_avistamiento') }}">Reportar Avistamiento</a></li>
+            <li><a href="{{ url_for('estadisticas') }}">Estadisticas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Avistamiento de Aves</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha y Hora</th>
+                    <th>Nombre del Ave</th>
+                    <th>Lugar</th>
+                    <th>Voluntario</th>
+                    <th>Evidencia</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for a in avistamientos %}
+                  <tr>
+                    <td>{{ a.fecha_hora.strftime('%d/%m/%Y %H:%M') }}</td>
+                    <td>
+                      <a href="{{ url_for('detalle_avistamiento', id=a.id) }}">
+                        <strong>{{ a.ave.nombre }}</strong>
+                      </a>
+                    </td>
+                    <td>{{ a.lugar }}</td>
+                    <td>{{ a.voluntario.nombre }}</td>
+                    <td>
+                      {% if a.archivos %}
+                          {% set ext = a.archivos[0].ruta.rsplit('.', 1)[-1].lower() %}
+                          {% if ext in ['mp4', 'webm', 'mov'] %}
+                            <span> Video ({{ a.archivos|length }})</span>
+                          {% else %}
+                            <img src="{{ url_for('static', filename=a.archivos[0].ruta) }}" alt="{{ a.ave.nombre }}" width="80" style="height: 60px; object-fit: cover;">
+                          {% endif %}
+                      {% else %}
+                          <span>Sin evidencia</span>
+                      {% endif %}
+                    </td>
+                  </tr>
+                {% else %}
+                  <tr>
+                    <td colspan="5" style="text-align: center;">No hay avistamientos registrados aún.</td>
+                  </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        {% if total_paginas > 1 %}
+            <p style="text-align: center; margin-top: 1rem;">
+                {% if page > 1 %}
+                    <a href="{{ url_for('listado_avistamientos', page=page - 1) }}">« Anterior</a>
+                {% endif %}
+                <span>Página {{ page }} de {{ total_paginas }}</span>
+                {% if page < total_paginas %}
+                    <a href="{{ url_for('listado_avistamientos', page=page + 1) }}">Siguiente »</a>
+                {% endif %}
+            </p>
+        {% endif %}
+    </section>
+
+    <p>
+        <a href="{{ url_for('reporte_avistamiento') }}">Reportar nuevo avistamiento</a> | 
+        <a href="{{ url_for('index') }}">Regresar a Inicio</a>
+    </p>
+</main>
+
+</body>
+</html>

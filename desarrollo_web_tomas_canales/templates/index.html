@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unión de Ornitólogos de Chile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/simple.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Unión de Ornitólogos de Chile.</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('registro_voluntario') }}">Registrar Voluntario</a></li>
+            <li><a href="{{ url_for('reporte_avistamiento') }}">Reportar Avistamientos</a></li>
+            <li><a href="{{ url_for('listado_avistamientos') }}">Listado de Avistamientos</a></li>
+            <li><a href="{{ url_for('estadisticas') }}">Estadisticas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <p></p><strong>{{ message }}</strong></p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <section>
+        <h2>Bienvenido a la Pagina de la Unión de Ornitólogos de Chile</h2>
+        <p>
+            Esta iniciativa busca mantener actualizado el registro
+            de avistamientos de aves a lo largo de nuestro país, monitoreando los efectos que los fenómenos
+            climaticos provocan en sus poblaciones
+        </p>
+        <p>
+            Gracias a nuestro nuevo sistema permite a la comunidad colaborar reportando observaciones
+            en terreno y consultando registros históricos para la conservación científica.
+        </p>
+    </section>
+</main>
+
+</body>
+</html>
