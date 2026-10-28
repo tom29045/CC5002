@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Avistamiento</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/simple.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Registro de Avistamiento</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('registro_voluntario') }}">Registrar Voluntario</a></li>
+                <li><a href="{{ url_for('listado_avistamientos') }}">Listado de Avistamientos</a></li>
+                <li><a href="{{ url_for('estadisticas') }}">Estadisticas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% if errores %}
+                <strong>Errores encontrados:</strong>
+                <ul>
+                    {% for err in errores %}
+                        <li>{{ err }}</li>
+                    {% endfor %}
+                </ul>
+            </aside>
+        {% endif %}
+
+        <h2>Formulario de Registro</h2>
+        <form id="registro" method="POST" action="{{ url_for('reporte_avistamiento') }}" enctype="multipart/form-data">
+            <fieldset>
+                <p>
+                    <label for="voluntario_id">Voluntario observador (*):</label>
+                    <select id="voluntario_id" name="voluntario_id">
+                        <option value="">Seleccione el voluntario que reporta</option>
+                        {% for v in voluntarios %}
+                            {% if voluntario_seleccionado == v.id|string or datos.get('voluntario_id') == v.id|string %}
+                                <option value="{{ v.id }}" selected>{{ v.nombre }} ({{ v.email }})</option>
+                            {% else %}
+                                <option value="{{ v.id }}">{{ v.nombre }} ({{ v.email }})</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                </p>
+
+                <p>
+                    <label for="ave_id">Especie de Ave (*):</label>
+                    <select id="ave_id" name="ave_id">
+                        <option value="">Seleccione un ave del catálogo</option>
+                        {% for a in aves %}
+                            {% if datos.get('ave_id') == a.id|string %}
+                                <option value="{{ a.id }}" selected>{{ a.nombre }}</option>
+                            {% else %}
+                                <option value="{{ a.id }}">{{ a.nombre }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                </p>
+
+                <p>
+                    <label for="lugar">Lugar de Avistamiento (*):</label>
+                    <input type="text" id="lugar" name="lugar" value="{{ datos.get('lugar', '') }}" placeholder="Ej: Humedal Batuco, Lampa">
+                </p>
+
+                <p>
+                    <label for="dia_hora">Día y Hora del Avistamiento (*):</label>
+                    <input type="datetime-local" id="dia_hora" name="dia_hora" value="{{ datos.get('dia_hora', '') }}">
+                </p>
+
+                <p>
+                    <label for="descripcion">Descripción (opcional, máx 500 caracteres):</label>
+                    <textarea id="descripcion" name="descripcion" rows="3" placeholder="Detalles u observaciones del avistamiento...">{{ datos.get('descripcion', '') }}</textarea>
+                </p>
+
+                <p>
+                    <label for="evidencia">Evidencias multimedia (Fotos o Videos, máx 50 MB por archivo) (*):</label>
+                    <input type="file" id="evidencia" name="evidencia" accept="image/*,video/*" multiple>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Finalizar Reporte</button>
+                <a href="{{ url_for('index') }}">Regresar a Inicio</a>
+            </p>
+        </form>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/reporte_avistamiento.js') }}"></script>
+</body>
+</html>
+
