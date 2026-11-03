@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Avistamiento - Red de Observación</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/simple.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Detalle de Avistamiento</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Inicio</a></li>
+            <li><a href="{{ url_for('registro_voluntario') }}">Registrar Voluntario</a></li>
+            <li><a href="{{ url_for('reporte_avistamiento') }}">Reportar Avistamientos</a></li>
+            <li><a href="{{ url_for('listado_avistamientos') }}">Listado de Avistamientos</a></li>
+            <li><a href="{{ url_for('estadisticas') }}">Estadísticas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h2>{{ avistamiento.ave.nombre }}</h2>
+        <p><strong>Lugar:</strong> {{ avistamiento.lugar }}</p>
+        <p><strong>Fecha y Hora:</strong> {{ avistamiento.fecha_hora.strftime('%d/%m/%Y %H:%M') }}</p>
+        <p><strong>Voluntario(a):</strong> {{ avistamiento.voluntario.nombre }} ({{ avistamiento.voluntario.email }})</p>
+        {% if avistamiento.descripcion %}
+            <p><strong>Descripción:</strong> {{ avistamiento.descripcion }}</p>
+        {% endif %}
+    </article>
+
+    <section>
+        <h3>Evidencias</h3>
+        {% if avistamiento.registros %}
+            {% for reg in avistamiento.registros %}
+                {% set ext = reg.ruta_archivo.rsplit('.', 1)[-1].lower() %}
+                <figure>
+                    {% if ext in ['mp4', 'webm', 'mov'] %}
+                        <video width="320" controls>
+                            <source src="{{ url_for('static', filename=reg.ruta_archivo) }}">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    {% else %}
+                        <img src="{{ url_for('static', filename=reg.ruta_archivo) }}" alt="Evidencia de {{ avistamiento.ave.nombre }}" width="320">
+                    {% endif %}
+                    <figcaption><small>{{ reg.nombre_archivo }}</small></figcaption>
+                </figure>
+            {% endfor %}
+        {% else %}
+            <p><em>No hay evidencias multimedia registradas para este avistamiento.</em></p>
+        {% endif %}
+    </section>
+
+    <hr>
+
+    <section id="comentarios">
+        <h3>Comentarios</h3>
+        <ul id="lista-comentarios">
+            <li><em>Cargando comentarios...</em></li>
+        </ul>
+
+        <form id="form-comentario" data-avistamiento-id="{{ avistamiento.id }}" novalidate>
+            <fieldset>
+                <legend>Agregar comentario</legend>
+
+                <p>
+                    <label for="nombre">Nombre (*):</label><br>
+                    <input type="text" id="nombre" name="nombre" minlength="3" maxlength="50" required>
+                </p>
+
+                <p>
+                    <label for="texto">Comentario (*):</label><br>
+                    <textarea id="texto" name="texto" rows="3" cols="40" minlength="5" required></textarea>
+                </p>
+
+                <p id="errores-comentario" role="alert" style="color: #d81b60; display: none;"></p>
+
+                <p>
+                    <button type="submit" id="btn-comentario">Agregar comentario</button>
+                </p>
+            </fieldset>
+        </form>
+    </section>
+
+    <p>
+        <a href="{{ url_for('listado_avistamientos') }}">Volver al listado</a> |
+        <a href="{{ url_for('index') }}">Regresar a Inicio</a>
+    </p>
+</main>
+
+<script src="{{ url_for('static', filename='js/detalle_avistamiento.js') }}"></script>
+</body>
+</html>

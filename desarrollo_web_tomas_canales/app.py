@@ -1,13 +1,15 @@
 import os
 from datetime import datetime
-from flask import Flask, render_template, request, redirect, url_for
-from sqlalchemy import select, desc
-from db import Get_Session, Region, Comuna, Voluntario, Ave, Avistamiento, Registro
-from validations import validar_formulario, validar_region_y_comuna
+from flask import Flask, render_template, request, redirect, url_for, jsonify
+from sqlalchemy import select, desc, func
+from db import Get_Session, Region, Comuna, Voluntario, Ave, Avistamiento, Registro, Comentario
+from validations import validar_formulario, validar_region_y_comuna, validar_comentario, validar_avistamiento
 from math import ceil
 import filetype
 from werkzeug.utils import secure_filename
 import hashlib
+import math
+from sqlalchemy.orm import joinedload
 
 
 app = Flask(__name__)
@@ -19,7 +21,6 @@ os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 @app.route('/')
 def index():
     session = Get_Session()
-    # Portada: últimos 2 avistamientos agregados
     stmt = select(Avistamiento).order_by(desc(Avistamiento.id)).limit(2)
     ultimos = session.scalars(stmt).all()
     session.close()
@@ -218,9 +219,6 @@ def reporte_avistamiento():
     return html
 
 
-import math
-from sqlalchemy.orm import joinedload
-
 @app.route('/listado-avistamientos')
 def listado_avistamientos():
     session = Get_Session()
@@ -253,12 +251,6 @@ def listado_avistamientos():
     session.close()
     return html
 
-
-@app.route('/avistamiento/<int:id>')
-def detalle_avistamiento(id):
-    return f"Detalle del avistamiento #{id}"
-
-from sqlalchemy import func, desc
 
 @app.route('/estadisticas')
 def estadisticas():
@@ -312,6 +304,132 @@ def estadisticas():
         stats_aves=stats_aves,
         conteo_regiones=conteo_regiones
     )
+
+@app.route('/avistamiento/<int:id>')
+def detalle_avistamiento(id):
+    session = Get_Session()
+
+    avistamiento = (
+        session.query(Avistamiento)
+        .options(
+            joinedload(Avistamiento.ave),
+            joinedload(Avistamiento.voluntario),
+            joinedload(Avistamiento.registros)
+        )
+        .filter(Avistamiento.id == id)
+        .first()
+    )
+
+    if not avistamiento:
+        session.close()
+        return "Avistamiento no encontrado", 404
+
+    html = render_template('detalle_avistamiento.html', avistamiento=avistamiento)
+    session.close()
+    return html
+
+
+
+@app.route('/avistamiento/<int:id>/comentarios', methods=['GET'])
+def obtener_comentarios(id):
+    session = Get_Session()
+    comentarios = (
+        session.query(Comentario)
+        .filter(Comentario.avistamiento_id == id)
+        .order_by(Comentario.fecha.desc())
+        .all()
+    )
+    session.close()
+
+    data = [
+        {
+            "id": c.id,
+            "nombre": c.nombre,
+            "texto": c.texto,
+            "fecha": c.fecha.strftime("%d/%m/%Y %H:%M")
+        }
+        for c in comentarios
+    ]
+    return jsonify(data), 200
+
+
+@app.route('/avistamiento/<int:id>/comentarios', methods=['POST'])
+def agregar_comentario(id):
+    data = request.get_json(silent=True) or {}
+    nombre = data.get('nombre', '')
+    texto = data.get('texto', '')
+
+    errores = validar_comentario(nombre, texto)
+    if errores:
+        return jsonify({"success": False, "errores": errores}), 400
+
+    session = Get_Session()
+    try:
+        nuevo = Comentario(
+            nombre=nombre.strip(),
+            texto=texto.strip(),
+            fecha=datetime.now(),
+            avistamiento_id=id
+        )
+        session.add(nuevo)
+        session.commit()
+        session.close()
+        return jsonify({"success": True}), 201
+    except Exception as e:
+        session.rollback()
+        session.close()
+        return jsonify({"success": False, "errores": ["Error interno al guardar en BD."]}), 500
+
+from sqlalchemy import func
+
+@app.route('/estadisticas')
+def vista_estadisticas():
+    return render_template('estadisticas.html')
+
+@app.route('/api/estadisticas')
+def datos_estadisticas():
+    session = Get_Session()
+
+    dia_col = func.date(Avistamiento.fecha_hora)
+    res_lineas = (
+        session.query(dia_col, func.count(Avistamiento.id))
+        .group_by(dia_col)
+        .order_by(dia_col.asc())
+        .all()
+    )
+    lineas = {
+        "fechas": [str(r[0]) for r in res_lineas],
+        "cantidades": [int(r[1]) for r in res_lineas]
+    }
+
+    res_torta = (
+        session.query(Ave.nombre, func.count(Avistamiento.id))
+        .join(Avistamiento, Ave.id == Avistamiento.ave_id)
+        .group_by(Ave.id, Ave.nombre)
+        .order_by(func.count(Avistamiento.id).desc())
+        .all()
+    )
+    torta = [{"name": r[0], "y": int(r[1])} for r in res_torta]
+
+    res_barras = (
+        session.query(Comuna.nombre, func.count(Voluntario.id))
+        .join(Voluntario, Comuna.id == Voluntario.comuna_id)
+        .group_by(Comuna.id, Comuna.nombre)
+        .order_by(Comuna.nombre.asc())
+        .all()
+    )
+    barras = {
+        "comunas": [r[0] for r in res_barras],
+        "totales": [int(r[1]) for r in res_barras]
+    }
+
+    session.close()
+
+    return jsonify({
+        "lineas": lineas,
+        "torta": torta,
+        "barras": barras
+    }), 200
 
 
 

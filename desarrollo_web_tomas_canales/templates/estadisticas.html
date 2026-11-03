@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estadísticas</title>
+    <title>Estadísticas - Red de Observación</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/simple.css') }}">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
 <body>
 
 <header>
-    <h1>Estadísticas de la Red</h1>
+    <h1>Estadísticas de la Plataforma</h1>
     <nav>
         <ul>
             <li><a href="{{ url_for('index') }}">Inicio</a></li>
@@ -22,86 +23,30 @@
 
 <main>
     <section>
-        <h2>Resumen General</h2>
-        <article>
-            <h3>Total de Avistamientos</h3>
-            <p><strong>{{ total_avistamientos }}</strong> registros procesados</p>
-        </article>
-
-        <article>
-            <h3>Voluntarios Activos</h3>
-            <p><strong>{{ total_voluntarios }}</strong> observadores inscritos</p>
-        </article>
-
-        <article>
-            <h3>Especie más Observada</h3>
-            <p>
-                {% if especie_top %}
-                    <strong>{{ especie_top.nombre }}</strong> ({{ especie_top.total }} avistamientos)
-                {% else %}
-                    <strong>Sin registros</strong>
-                {% endif %}
-            </p>
-        </article>
+        <h2>Avistamientos por Día</h2>
+        <figure id="grafico-lineas" style="width: 100%; height: 400px; margin: 0;"></figure>
     </section>
 
-    <section>
-        <h2>Avistamientos por Especie de Ave</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Especie</th>
-                    <th>Cantidad</th>
-                    <th>Porcentaje</th>
-                    <th>Nivel</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for ave in stats_aves %}
-                    <tr>
-                        <td>{{ ave.nombre }}</td>
-                        <td>{{ ave.cantidad }}</td>
-                        <td>{{ ave.porcentaje }}%</td>
-                        <td><meter min="0" max="100" value="{{ ave.porcentaje }}">{{ ave.porcentaje }}%</meter></td>
-                    </tr>
-                {% else %}
-                    <tr>
-                        <td colspan="4" style="text-align: center;">No hay datos disponibles.</td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </section>
+    <hr>
 
     <section>
-        <h2>Avistamientos por Región</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Región</th>
-                    <th>N° de Avistamientos</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for reg in conteo_regiones %}
-                    <tr>
-                        <td>{{ reg.nombre }}</td>
-                        <td>{{ reg.cantidad }}</td>
-                    </tr>
-                {% else %}
-                    <tr>
-                        <td colspan="2" style="text-align: center;">No hay datos disponibles.</td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+        <h2>Avistamientos por Tipo de Ave</h2>
+        <figure id="grafico-torta" style="width: 100%; height: 400px; margin: 0;"></figure>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Voluntarios por Comuna</h2>
+        <figure id="grafico-barras" style="width: 100%; height: 400px; margin: 0;"></figure>
     </section>
 
     <p>
-        <a href="{{ url_for('listado_avistamientos') }}">Ir al listado</a> | 
+        <a href="{{ url_for('listado_avistamientos') }}">Ir al listado</a> |
         <a href="{{ url_for('index') }}">Regresar a inicio</a>
     </p>
 </main>
 
+<script src="{{ url_for('static', filename='js/estadisticas.js') }}"></script>
 </body>
 </html>

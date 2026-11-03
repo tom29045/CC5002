@@ -100,7 +100,7 @@ def validar_avistamiento(session, voluntario_id, ave_id, fecha_hora_str, lugar, 
             file.seek(0)
             kind = filetype.guess(head)
 
-            if kind is None or kind.mime not in TIPOS_PERMITIDOS:
+            if kind is None or kind.mime not in ARCHIVOS_VALIDOS:
                 errores.append(f"El archivo '{file.filename}' no tiene un formato válido.")
 
             file.seek(0, 2)
@@ -108,5 +108,21 @@ def validar_avistamiento(session, voluntario_id, ave_id, fecha_hora_str, lugar, 
             file.seek(0)
             if tamano > MAX_BYTES:
                 errores.append(f"El archivo '{file.filename}' supera los 50 MB permitidos.")
+
+    return errores
+
+def validar_comentario(nombre, texto):
+    errores = []
+
+    nom = (nombre or "").strip()
+    txt = (texto or "").strip()
+
+    if not nom or len(nom) < 3 or len(nom) > 50:
+        errores.append("El nombre es obligatorio y debe tener entre 3 y 50 caracteres.")
+
+    if not txt or len(txt) < 5:
+        errores.append("El comentario es obligatorio y debe tener al menos 5 caracteres.")
+    elif len(txt) > 300:
+        errores.append("El comentario no puede exceder los 300 caracteres.")
 
     return errores

@@ -56,6 +56,8 @@ class Avistamiento(Base):
     voluntario: Mapped["Voluntario"] = relationship(back_populates="avistamientos")
     ave: Mapped["Ave"] = relationship(back_populates="avistamientos")
     registros: Mapped[List["Registro"]] = relationship(back_populates="avistamiento")
+    comentarios: Mapped[List["Comentario"]] = relationship(back_populates="avistamiento")
+
 
 class Registro(Base):
     __tablename__ = "registro"
@@ -65,4 +67,12 @@ class Registro(Base):
     avistamiento_id: Mapped[int] = mapped_column(ForeignKey("avistamiento.id"))
     avistamiento: Mapped["Avistamiento"] = relationship(back_populates="registros")
 
+class Comentario(Base):
+    __tablename__ = "comentario"
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    nombre: Mapped[str] = mapped_column(String(80))
+    texto: Mapped[str] = mapped_column(String(300))
+    fecha: Mapped[datetime] = mapped_column(DateTime, default=datetime.now)
+    avistamiento_id: Mapped[int] = mapped_column(ForeignKey("avistamiento.id"))
 
+    avistamiento: Mapped["Avistamiento"] = relationship(back_populates="comentarios")
