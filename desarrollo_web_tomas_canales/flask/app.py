@@ -380,8 +380,6 @@ def agregar_comentario(id):
         session.close()
         return jsonify({"success": False, "errores": ["Error interno al guardar en BD."]}), 500
 
-from sqlalchemy import func
-
 @app.route('/estadisticas')
 def vista_estadisticas():
     return render_template('estadisticas.html')

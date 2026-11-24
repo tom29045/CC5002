@@ -1,0 +1,289 @@
+2026.11.19 19:16:35 WARN  Using H2 2.5.250 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2026.11.19 19:16:37 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+2026.11.19 19:16:37 WARN  no build tool detected in workspace '/root/CC5002'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2026.11.19 19:16:38 WARN  Build server is not auto-connectable.[0m
+2026.11.19 19:16:38 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java[0m
+2026.11.19 19:16:38 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+2026.11.19 19:16:39 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Output:
+[0m
+2026.11.19 19:17:37 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+2026.11.19 19:17:37 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+2026.11.19 19:17:39 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+2026.11.19 19:17:39 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java[0m
+Nov 19, 2026 7:17:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+Nov 19, 2026 7:17:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16
+2026.11.19 19:17:40 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+2026.11.19 22:20:20 INFO  Shutting down server[0m
+2026.11.19 22:20:20 INFO  Memory monitor stopped[0m
+2026.11.19 22:20:20 INFO  shutting down Metals[0m
+2026.11.19 22:20:20 INFO  Exiting server[0m
+2026.11.21 17:03:43 INFO  Started: Metals version 1.6.9 in folders '/root/CC5002' for client code-server 1.112.0.[0m
+2026.11.21 17:03:43 INFO  Memory monitor started[0m
+2026.11.21 17:03:45 WARN  Using H2 2.5.250 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2026.11.21 17:03:47 WARN  no build tool detected in workspace '/root/CC5002'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2026.11.21 17:03:47 WARN  Build server is not auto-connectable.[0m
+2026.11.21 17:03:47 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java[0m
+2026.11.21 23:05:16 INFO  Shutting down server[0m
+2026.11.21 23:05:16 INFO  Memory monitor stopped[0m
+2026.11.21 23:05:16 INFO  shutting down Metals[0m
+2026.11.21 23:05:16 INFO  Exiting server[0m
+2026.11.21 23:08:29 INFO  Started: Metals version 1.6.9 in folders '/root/CC5002' for client code-server 1.112.0.[0m
+2026.11.21 23:08:29 INFO  Memory monitor started[0m
+2026.11.21 23:08:31 WARN  Using H2 2.5.250 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2026.11.21 23:08:33 WARN  no build tool detected in workspace '/root/CC5002'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2026.11.21 23:08:33 WARN  Build server is not auto-connectable.[0m
+2026.11.21 23:08:33 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java[0m
+2026.11.21 23:08:39 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+2026.11.21 23:08:40 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java[0m
+Nov 21, 2026 11:08:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2026.11.21 23:08:40 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+Nov 21, 2026 11:08:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+2026.11.21 23:08:40 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+2026.11.21 23:08:40 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+2026.11.21 23:08:42 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+2026.11.21 23:09:16 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+2026.11.21 23:09:16 Nov 21, 2026 11:09:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 20
+WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java[0m
+2026.11.21 23:09:16 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+Nov 21, 2026 11:09:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 21
+Nov 21, 2026 11:09:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 22
+2026.11.21 23:09:16 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+2026.11.21 23:09:18 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+2026.11.21 23:10:32 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Avistamiento.java[0m
+2026.11.21 23:10:32 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Avistamiento.java. Using fallback presentation compiler.[0m
+2026.11.21 23:10:32 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Avistamiento.java. Output:
+[0m
+2026.11.21 23:10:48 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Avistamiento.java. Using fallback presentation compiler.[0m
+2026.11.21 23:10:48 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Avistamiento.java. Using fallback presentation compiler.[0m
+2026.11.21 23:10:49 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Avistamiento.java. Using fallback presentation compiler.[0m
+2026.11.21 23:10:49 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Avistamiento.java. Output:
+[0m
+2026.11.21 23:10:49 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Avistamiento.java[0m
+2026.11.21 23:10:49 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Avistamiento.java. Using fallback presentation compiler.[0m
+2026.11.21 23:11:06 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Comuna.java[0m
+2026.11.21 23:11:06 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Comuna.java. Output:
+[0m
+2026.11.21 23:11:06 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Comuna.java. Using fallback presentation compiler.[0m
+2026.11.21 23:11:16 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Comuna.java. Using fallback presentation compiler.[0m
+2026.11.21 23:11:16 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Comuna.java. Using fallback presentation compiler.[0m
+2026.11.21 23:11:16 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Comuna.java. Output:
+[0m
+2026.11.21 23:11:17 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Comuna.java. Using fallback presentation compiler.[0m
+2026.11.21 23:11:17 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Comuna.java[0m
+2026.11.21 23:11:17 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Comuna.java. Using fallback presentation compiler.[0m
+2026.11.21 23:11:18 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Comuna.java. Using fallback presentation compiler.[0m
+2026.11.21 23:11:30 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Ave.java[0m
+2026.11.21 23:11:30 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Ave.java. Output:
+[0m
+2026.11.21 23:11:30 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Ave.java. Using fallback presentation compiler.[0m
+2026.11.21 23:11:39 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Ave.java. Using fallback presentation compiler.[0m
+2026.11.21 23:11:39 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Ave.java. Using fallback presentation compiler.[0m
+2026.11.21 23:11:39 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Ave.java. Using fallback presentation compiler.[0m
+2026.11.21 23:11:39 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Ave.java. Output:
+[0m
+2026.11.21 23:11:39 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Ave.java[0m
+2026.11.21 23:11:40 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Ave.java. Using fallback presentation compiler.[0m
+2026.11.21 23:11:56 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Voluntario.java[0m
+2026.11.21 23:11:56 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Voluntario.java. Output:
+[0m
+2026.11.21 23:11:56 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Voluntario.java. Using fallback presentation compiler.[0m
+2026.11.21 23:12:12 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Voluntario.java. Using fallback presentation compiler.[0m
+2026.11.21 23:12:12 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Voluntario.java. Using fallback presentation compiler.[0m
+2026.11.21 23:12:13 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Voluntario.java. Output:
+[0m
+2026.11.21 23:12:13 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Voluntario.java. Using fallback presentation compiler.[0m
+2026.11.21 23:12:13 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Voluntario.java[0m
+2026.11.21 23:12:13 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Voluntario.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:40 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java[0m
+2026.11.21 23:18:40 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:40 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Output:
+[0m
+2026.11.21 23:18:51 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:51 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:52 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:52 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Output:
+[0m
+2026.11.21 23:18:52 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java[0m
+2026.11.21 23:18:52 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:55 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:55 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:55 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:56 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:56 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:57 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+Nov 21, 2026 11:18:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 169
+2026.11.21 23:18:56 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:56 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:56 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:56 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:56 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+Nov 21, 2026 11:18:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 177
+Nov 21, 2026 11:18:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 179
+2026.11.21 23:18:56 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:56 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+Nov 21, 2026 11:18:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 180
+2026.11.21 23:18:57 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:57 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:57 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:57 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+Nov 21, 2026 11:18:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 185
+2026.11.21 23:18:57 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+Nov 21, 2026 11:18:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 186
+2026.11.21 23:18:57 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:57 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:57 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+Nov 21, 2026 11:18:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 190
+2026.11.21 23:18:57 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:57 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:58 INFO  time: code lens generation in 1.46s[0m
+2026.11.21 23:18:57 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:57 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:57 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+Nov 21, 2026 11:18:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 195
+2026.11.21 23:18:58 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+Nov 21, 2026 11:18:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 199
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+Nov 21, 2026 11:18:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 204
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+Nov 21, 2026 11:18:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 206
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+Nov 21, 2026 11:18:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 215
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+Nov 21, 2026 11:18:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 219
+2026.11.21 23:18:59 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:00 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:00 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:00 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:00 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:00 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:00 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:01 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java[0m
+2026.11.21 23:19:01 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:01 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:01 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:01 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:02 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java[0m
+2026.11.21 23:19:02 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:02 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:02 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:02 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:03 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Output:
+[0m
+2026.11.21 23:19:04 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java[0m
+2026.11.21 23:19:04 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:06 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:06 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:06 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:06 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:07 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0mNov 21, 2026 11:19:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 257
+
+2026.11.21 23:19:06 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:08 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:08 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:08 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:08 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:08 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:08 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:08 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:08 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:09 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:09 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:09 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:09 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:09 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:09 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:09 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:09 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:09 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:09 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:10 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:10 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:10 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:10 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:10 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:10 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:11 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:19:12 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java[0m
+2026.11.21 23:19:12 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:20:05 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+Nov 21, 2026 11:20:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 290
+2026.11.21 23:20:05 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java[0m
+2026.11.21 23:20:05 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:20:05 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:20:06 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java. Using fallback presentation compiler.[0m
+2026.11.21 23:24:06 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/AvistamientoRepository.java[0m
+2026.11.21 23:24:06 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/AvistamientoRepository.java. Using fallback presentation compiler.[0m
+2026.11.21 23:24:06 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/AvistamientoRepository.java. Output:
+[0m
+2026.11.21 23:24:17 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/AvistamientoRepository.java. Using fallback presentation compiler.[0m
+2026.11.21 23:24:17 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/AvistamientoRepository.java. Using fallback presentation compiler.[0m
+2026.11.21 23:24:17 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/AvistamientoRepository.java. Using fallback presentation compiler.[0m
+2026.11.21 23:24:17 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/AvistamientoRepository.java. Output:
+[0m
+2026.11.21 23:24:17 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/AvistamientoRepository.java[0m
+2026.11.21 23:24:18 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/AvistamientoRepository.java. Using fallback presentation compiler.[0m
+2026.11.21 23:24:30 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/NotaRepository.java[0m
+2026.11.21 23:24:30 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/NotaRepository.java. Output:
+[0m
+2026.11.21 23:24:30 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/NotaRepository.java. Using fallback presentation compiler.[0m
+2026.11.21 23:24:41 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/NotaRepository.java. Using fallback presentation compiler.[0m
+2026.11.21 23:24:41 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/NotaRepository.java. Using fallback presentation compiler.[0m
+2026.11.21 23:24:41 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/NotaRepository.java. Output:
+[0m
+2026.11.21 23:24:41 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/NotaRepository.java. Using fallback presentation compiler.[0m
+2026.11.21 23:24:41 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/NotaRepository.java[0m
+2026.11.21 23:24:42 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/NotaRepository.java. Using fallback presentation compiler.[0m
+2026.11.21 23:25:03 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/web/BuscadorController.java[0m
+2026.11.21 23:25:03 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/web/BuscadorController.java. Output:
+[0m
+2026.11.21 23:25:03 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/web/BuscadorController.java. Using fallback presentation compiler.[0m
+2026.11.21 23:25:20 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/web/BuscadorController.java. Using fallback presentation compiler.[0m
+2026.11.21 23:25:20 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/web/BuscadorController.java. Using fallback presentation compiler.[0m
+2026.11.21 23:25:20 WARN  Running javac-semanticdb failed for file:///root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/web/BuscadorController.java. Output:
+[0m
+2026.11.21 23:25:21 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/web/BuscadorController.java. Using fallback presentation compiler.[0m
+2026.11.21 23:25:21 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/web/BuscadorController.java[0m
+2026.11.21 23:25:21 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/web/BuscadorController.java. Using fallback presentation compiler.[0m
+2026.11.21 23:37:33 INFO  no build target found for /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/tarea4app.java. Using fallback presentation compiler.[0m
+2026.11.21 23:37:33 WARN  no build target for: /root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/Tarea4Application.java[0m
+2026.11.22 17:17:00 INFO  Shutting down server[0m
+2026.11.22 17:17:00 INFO  Memory monitor stopped[0m
+2026.11.22 17:17:00 INFO  shutting down Metals[0m
+2026.11.22 17:17:00 INFO  Exiting server[0m

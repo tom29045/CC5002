@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Avistamientos</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body>
+<header>
+    <h1>Buscador de Avistamientos</h1>
+</header>
+<main>
+    <form id="form-buscador" action="#" method="get">
+        <label for="q">Buscar por ave, voluntario o comuna</label>
+        <input type="text" id="q" name="q" autocomplete="off" placeholder="Escribe para buscar...">
+    </form>
+    <p id="mensaje" role="status"></p>
+    <table id="tabla" hidden>
+        <thead>
+            <tr>
+                <th>Voluntario</th>
+                <th>Día</th>
+                <th>Ave</th>
+                <th>Comuna</th>
+                <th>Nota</th>
+                <th>Evaluar</th>
+            </tr>
+        </thead>
+        <tbody id="resultados"></tbody>
+    </table>
+</main>
+<script src="js/buscador.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+cl/tarea4/model/Voluntario.class
+cl/tarea4/model/Avistamiento.class
+cl/tarea4/web/BuscadorController.class
+cl/tarea4/model/Comuna.class
+cl/tarea4/web/BuscadorController$Resultado.class
+cl/tarea4/model/Ave.class
+cl/tarea4/repo/AvistamientoRepository.class
+cl/tarea4/Tarea4Application.class
+cl/tarea4/model/Nota.class
+cl/tarea4/repo/NotaRepository.class

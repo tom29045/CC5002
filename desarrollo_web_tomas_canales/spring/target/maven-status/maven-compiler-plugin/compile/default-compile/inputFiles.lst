@@ -1,0 +1,9 @@
+/root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/Tarea4Application.java
+/root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Ave.java
+/root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Avistamiento.java
+/root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Comuna.java
+/root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Nota.java
+/root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/model/Voluntario.java
+/root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/AvistamientoRepository.java
+/root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/repo/NotaRepository.java
+/root/CC5002/desarrollo_web_tomas_canales/spring/src/main/java/cl/tarea4/web/BuscadorController.java
